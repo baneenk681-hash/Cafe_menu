@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Café | قائمة المنيو</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf8f2;
+            color: #4a3b32;
+            text-align: center;
+        }
+        header {
+            background-color: #6f4e37;
+            color: white;
+            padding: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #6f4e37;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+            text-align: right;
+        }
+        .menu-section h3 {
+            border-bottom: 2px solid #e6ccb2;
+            padding-bottom: 5px;
+            color: #6f4e37;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dashed #e6ccb2;
+        }
+        .price {
+            font-weight: bold;
+            color: #6f4e37;
+        }
+        footer {
+            background-color: #6f4e37;
+            color: white;
+            padding: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>☕ Cloud Café</h2>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="menu.html">قائمة المنيو</a>
+            <a href="contact.html">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>📜 قائمة المأكولات والمشروبات</h1>
+        <p>نقدم لكم أجود المكونات بنكهات لا تُنسى</p>
+
+        <div class="menu-section">
+            <h3>☕ مشروبات ساخنة</h3>
+            <div class="menu-item">
+                <span>إسبريسو (Espresso)</span>
+                <span class="price">3,000 د.ع</span>
+            </div>
+            <div class="menu-item">
+                <span>كابوتشينو (Cappuccino)</span>
+                <span class="price">4,500 د.ع</span>
+            </div>
+            <div class="menu-item">
+                <span>سبانيش لاتيه ساخن (Spanish Latte)</span>
+                <span class="price">5,000 د.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>🍹 مشروبات باردة</h3>
+            <div class="menu-item">
+                <span>آيس لاتيه (Iced Latte)</span>
+                <span class="price">4,500 د.ع</span>
+            </div>
+            <div class="menu-item">
+                <span>آيس سبانيش لاتيه (Iced Spanish)</span>
+                <span class="price">5,500 د.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>🍰 الحلويات</h3>
+            <div class="menu-item">
+                <span>كيكة الزعفران (Saffron Cake)</span>
+                <span class="price">6,000 د.ع</span>
+            </div>
+            <div class="menu-item">
+                <span>براونيز بالشوكولاتة (Brownies)</span>
+                <span class="price">4,000 د.ع</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026</p>
+    </footer>
+
+</body>
+</html>
