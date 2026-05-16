@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Café | اتصل بنا</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf8f2;
+            color: #4a3b32;
+            text-align: center;
+        }
+        header {
+            background-color: #6f4e37;
+            color: white;
+            padding: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #6f4e37;
+        }
+        .info-box {
+            background-color: #f5ebe0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            text-align: right;
+            line-height: 1.8;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #e6ccb2;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        .btn-submit {
+            background-color: #6f4e37;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #4a3b32;
+        }
+        footer {
+            background-color: #6f4e37;
+            color: white;
+            padding: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>☕ Cloud Café</h2>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="menu.html">قائمة المنيو</a>
+            <a href="contact.html">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>📞 تواصلوا معنا</h1>
+        <p>يسعدنا دائماً سماع آرائكم واقتراحاتكم</p>
+
+        <div class="info-box">
+            📍 <b>الموقع:</b> كربلاء، قرب المتنزه الرئيسي.<br>
+            📞 <b>رقم الهاتف:</b> 07700000000<br>
+            📧 <b>البريد الإلكتروني:</b> info@cloudcafe.com
+        </div>
+
+        <form onsubmit="alert('شكراً لرسالتك! سنرد عليك قريباً.'); return false;">
+            <label for="name">الاسم الكريم:</label>
+            <input type="text" id="name" required placeholder="اكتب اسمك هنا">
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" required placeholder="name@example.com">
+
+            <label for="message">رسالتك أو ملاحظتك:</label>
+            <textarea id="message" rows="4" required placeholder="اكتب رسالتك هنا..."></textarea>
+
+            <button type="submit" class="btn-submit">إرسال الرسالة ✉️</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026</p>
+    </footer>
+
+</body>
+</html>
