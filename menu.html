@@ -3,64 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Café | قائمة المنيو</title>
+    <title>CyberPink PC | التجميعات</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fcf8f2;
-            color: #4a3b32;
+            background-color: #fff5f5;
+            color: #2b2d42;
             text-align: center;
         }
         header {
-            background-color: #6f4e37;
+            background-color: #4a4e69;
             color: white;
             padding: 20px;
+            border-bottom: 4px solid #ffb5a7;
         }
         nav a {
-            color: white;
+            color: #f7d6d0;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: white;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 30px auto;
-            padding: 20px;
+            padding: 25px;
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
         }
         h1 {
-            color: #6f4e37;
-        }
-        .menu-section {
+            color: #4a4e69;
             margin-bottom: 30px;
+        }
+        .tech-section {
+            margin-bottom: 40px;
             text-align: right;
+            background-color: #fff0f3;
+            padding: 20px;
+            border-radius: 15px;
+            border-right: 6px solid #ffb5a7;
         }
-        .menu-section h3 {
-            border-bottom: 2px solid #e6ccb2;
-            padding-bottom: 5px;
-            color: #6f4e37;
+        .tech-section h3 {
+            color: #4a4e69;
+            margin-top: 0;
+            border-bottom: 2px solid #ffb5a7;
+            padding-bottom: 8px;
+            font-size: 1.3rem;
         }
-        .menu-item {
+        .component-item {
             display: flex;
             justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px dashed #e6ccb2;
+            padding: 12px 0;
+            border-bottom: 1px dashed #ffc8dd;
+        }
+        .spec {
+            font-weight: 500;
         }
         .price {
             font-weight: bold;
-            color: #6f4e37;
+            color: #4a4e69;
+            background-color: #ffe5ec;
+            padding: 2px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
         }
         footer {
-            background-color: #6f4e37;
+            background-color: #4a4e69;
             color: white;
-            padding: 10px;
+            padding: 15px;
             margin-top: 50px;
         }
     </style>
@@ -68,55 +83,55 @@
 <body>
 
     <header>
-        <h2>☕ Cloud Café</h2>
+        <h2>🖥️ CyberPink PC Hub</h2>
         <nav>
             <a href="index.html">الرئيسية</a>
-            <a href="menu.html">قائمة المنيو</a>
-            <a href="contact.html">اتصل بنا</a>
+            <a href="menu.html">مواصفات التجميعات</a>
+            <a href="contact.html">طلب تجميعة خاصة</a>
         </nav>
     </header>
 
     <div class="container">
-        <h1>📜 قائمة المأكولات والمشروبات</h1>
-        <p>نقدم لكم أجود المكونات بنكهات لا تُنسى</p>
+        <h1>⚙️ تجميعات وقطع الحاسوب المقترحة</h1>
+        <p>جدول استعراضي لأقوى القطع المتوافقة لتشغيل أثقل البرامج والألعاب</p>
 
-        <div class="menu-section">
-            <h3>☕ مشروبات ساخنة</h3>
-            <div class="menu-item">
-                <span>إسبريسو (Espresso)</span>
-                <span class="price">3,000 د.ع</span>
+        <div class="tech-section">
+            <h3>🧠 المعالجات وكروت الشاشة (CPU & GPU)</h3>
+            <div class="component-item">
+                <span>معالج Intel Core i7-14700K (للعمل الشاق والرندرة)</span>
+                <span class="price">$410</span>
             </div>
-            <div class="menu-item">
-                <span>كابوتشينو (Cappuccino)</span>
-                <span class="price">4,500 د.ع</span>
+            <div class="component-item">
+                <span>معالج AMD Ryzen 7 7800X3D (الأقوى للألعاب)</span>
+                <span class="price">$370</span>
             </div>
-            <div class="menu-item">
-                <span>سبانيش لاتيه ساخن (Spanish Latte)</span>
-                <span class="price">5,000 د.ع</span>
+            <div class="component-item">
+                <span>كرت شاشة Nvidia RTX 4070 Ti Super (نسخة ASUS ROG Strix White)</span>
+                <span class="price">$850</span>
             </div>
         </div>
 
-        <div class="menu-section">
-            <h3>🍹 مشروبات باردة</h3>
-            <div class="menu-item">
-                <span>آيس لاتيه (Iced Latte)</span>
-                <span class="price">4,500 د.ع</span>
+        <div class="tech-section">
+            <h3>🎛️ الذاكرة والتخزين (RAM & SSD)</h3>
+            <div class="component-item">
+                <span>رامات CORSAIR Vengeance RGB DDR5 32GB (2x16GB) 6000MHz</span>
+                <span class="price">$120</span>
             </div>
-            <div class="menu-item">
-                <span>آيس سبانيش لاتيه (Iced Spanish)</span>
-                <span class="price">5,500 د.ع</span>
+            <div class="component-item">
+                <span>هارديسك Samsung 990 Pro NVMe M.2 SSD 2TB</span>
+                <span class="price">$170</span>
             </div>
         </div>
 
-        <div class="menu-section">
-            <h3>🍰 الحلويات</h3>
-            <div class="menu-item">
-                <span>كيكة الزعفران (Saffron Cake)</span>
-                <span class="price">6,000 د.ع</span>
+        <div class="tech-section">
+            <h3>🌸 التبريد والمظهر الخارجي (Cooling & Case)</h3>
+            <div class="component-item">
+                <span>تبريد مائي Lian Li Galahad II Trinity (لون أبيض/وردي RGB)</span>
+                <span class="price">$150</span>
             </div>
-            <div class="menu-item">
-                <span>براونيز بالشوكولاتة (Brownies)</span>
-                <span class="price">4,000 د.ع</span>
+            <div class="component-item">
+                <span>كيس كمبيوتر HYTE Y60 Modern Aesthetic Case (نسخة وردية)</span>
+                <span class="price">$200</span>
             </div>
         </div>
     </div>
