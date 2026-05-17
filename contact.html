@@ -3,48 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Café | اتصل بنا</title>
+    <title>CyberPink PC | طلب تجميعة</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fcf8f2;
-            color: #4a3b32;
+            background-color: #fff5f5;
+            color: #2b2d42;
             text-align: center;
         }
         header {
-            background-color: #6f4e37;
+            background-color: #4a4e69;
             color: white;
             padding: 20px;
+            border-bottom: 4px solid #ffb5a7;
         }
         nav a {
-            color: white;
+            color: #f7d6d0;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: white;
         }
         .container {
-            max-width: 600px;
+            max-width: 650px;
             margin: 30px auto;
             padding: 25px;
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
         }
         h1 {
-            color: #6f4e37;
+            color: #4a4e69;
         }
         .info-box {
-            background-color: #f5ebe0;
+            background-color: #fff0f3;
             padding: 15px;
-            border-radius: 8px;
+            border-radius: 12px;
             margin-bottom: 25px;
             text-align: right;
             line-height: 1.8;
+            border-right: 4px solid #ffb5a7;
         }
         form {
             display: flex;
@@ -52,34 +54,43 @@
             text-align: right;
         }
         label {
-            margin-top: 10px;
+            margin-top: 15px;
             font-weight: bold;
+            color: #4a4e69;
         }
-        input, textarea {
-            padding: 10px;
+        input, textarea, select {
+            padding: 12px;
             margin-top: 5px;
-            border: 1px solid #e6ccb2;
-            border-radius: 5px;
+            border: 1px solid #ffcbd7;
+            border-radius: 8px;
             font-family: inherit;
+            background-color: #fffafb;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #ffb5a7;
+            box-shadow: 0 0 5px rgba(255, 181, 167, 0.5);
         }
         .btn-submit {
-            background-color: #6f4e37;
+            background-color: #4a4e69;
             color: white;
-            padding: 12px;
+            padding: 14px;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: bold;
-            margin-top: 20px;
+            margin-top: 25px;
             cursor: pointer;
             transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(74, 78, 105, 0.2);
         }
         .btn-submit:hover {
-            background-color: #4a3b32;
+            background-color: #ffb5a7;
+            color: #4a4e69;
         }
         footer {
-            background-color: #6f4e37;
+            background-color: #4a4e69;
             color: white;
-            padding: 10px;
+            padding: 15px;
             margin-top: 50px;
         }
     </style>
@@ -87,35 +98,40 @@
 <body>
 
     <header>
-        <h2>☕ Cloud Café</h2>
+        <h2>🖥️ CyberPink PC Hub</h2>
         <nav>
             <a href="index.html">الرئيسية</a>
-            <a href="menu.html">قائمة المنيو</a>
-            <a href="contact.html">اتصل بنا</a>
+            <a href="menu.html">مواصفات التجميعات</a>
+            <a href="contact.html">طلب تجميعة خاصة</a>
         </nav>
     </header>
 
     <div class="container">
-        <h1>📞 تواصلوا معنا</h1>
-        <p>يسعدنا دائماً سماع آرائكم واقتراحاتكم</p>
+        <h1>📞 استشارات وهندسة التجميعات</h1>
+        <p>أرسلي لنا ميزانيتكِ وطبيعة عملكِ وسنقوم بتصميم حاسوب أحلامكِ</p>
 
         <div class="info-box">
-            📍 <b>الموقع:</b> كربلاء، قرب المتنزه الرئيسي.<br>
-            📞 <b>رقم الهاتف:</b> 07700000000<br>
-            📧 <b>البريد الإلكتروني:</b> info@cloudcafe.com
+            📍 <b>مقر المختبر الرقمي:</b> جامعة كربلاء، كلية تكنولوجيا المعلومات.<br>
+            📧 <b>الدعم الفني التقني:</b> support@cyberpinkpc.com
         </div>
 
-        <form onsubmit="alert('شكراً لرسالتك! سنرد عليك قريباً.'); return false;">
+        <form onsubmit="alert('تم استلام مواصفاتك بنجاح! سيقوم مهندسو العتاد بمراجعة الطلب.'); return false;">
             <label for="name">الاسم الكريم:</label>
-            <input type="text" id="name" required placeholder="اكتب اسمك هنا">
+            <input type="text" id="name" required placeholder="اكتبِ اسمكِ هنا">
 
-            <label for="email">البريد الإلكتروني:</label>
-            <input type="email" id="email" required placeholder="name@example.com">
+            <label for="usage">استخدامكِ الأساسي للحاسوب:</label>
+            <select id="usage">
+                <option>ألعاب وبرمجة عامة (Gaming & Dev)</option>
+                <option>هندسة برمجيات وأنظمة وهمية (Docker & Virtualization)</option>
+                <option>ذكاء اصطناعي وتحليل بيانات (AI & Machine Learning)</option>
+            </select>
 
-            <label for="message">رسالتك أو ملاحظتك:</label>
-            <textarea id="message" rows="4" required placeholder="اكتب رسالتك هنا..."></textarea>
+            <label for="budget">الميزانية التقريبية المرصودة:</label>
+            <input type="text" id="budget" required placeholder="مثلاً: 1200 دولار">
+            <label for="message">ملاحظات إضافية (ألوان معينة، ماركة تفضلينها):</label>
+            <textarea id="message" rows="4" placeholder="اكتبِ مواصفاتكِ الخاصة هنا..."></textarea>
 
-            <button type="submit" class="btn-submit">إرسال الرسالة ✉️</button>
+            <button type="submit" class="btn-submit">إرسال طلب التجميعة 📥</button>
         </form>
     </div>
 
