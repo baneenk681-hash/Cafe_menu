@@ -3,83 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Café | الرئيسية</title>
+    <title>CyberPink PC | الرئيسية</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fcf8f2;
-            color: #4a3b32;
+            background-color: #fff5f5;
+            color: #2b2d42;
             text-align: center;
         }
         header {
-            background-color: #6f4e37;
+            background-color: #4a4e69;
             color: white;
             padding: 20px;
+            border-bottom: 4px solid #ffb5a7;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        nav {
+            margin-top: 10px;
         }
         nav a {
-            color: white;
+            color: #f7d6d0;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            transition: 0.3s;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: white;
+            text-shadow: 0 0 8px #ffb5a7;
         }
         .hero {
-            padding: 50px 20px;
-            background-color: #f5ebe0;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #f7d6d0 0%, #fcd5ce 100%);
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
         }
         .hero h1 {
-            color: #6f4e37;
-            font-size: 2.5rem;
+            color: #4a4e69;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #4a4e69;
+        }
+        .intro-box {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(255, 181, 167, 0.3);
+            border-left: 5px solid #ffb5a7;
+            text-align: right;
         }
         .btn {
             display: inline-block;
-            background-color: #e6ccb2;
-            color: #4a3b32;
-            padding: 12px 24px;
+            background-color: #4a4e69;
+            color: white;
+            padding: 14px 28px;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             font-weight: bold;
             margin-top: 20px;
             transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(74, 78, 105, 0.3);
         }
         .btn:hover {
-            background-color: #b7b7a4;
-            color: white;
+            background-color: #ffb5a7;
+            color: #4a4e69;
+            transform: translateY(-2px);
         }
         footer {
-            background-color: #6f4e37;
+            background-color: #4a4e69;
             color: white;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            border-top: 3px solid #ffb5a7;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h2>☕ Cloud Café</h2>
+        <h2>🖥️ CyberPink PC Hub</h2>
         <nav>
             <a href="index.html">الرئيسية</a>
-            <a href="menu.html">قائمة المنيو</a>
-            <a href="contact.html">اتصل بنا</a>
+            <a href="menu.html">مواصفات التجميعات</a>
+            <a href="contact.html">طلب تجميعة خاصة</a>
         </nav>
     </header>
 
     <div class="hero">
-        <h1>أهلاً بكم في Cloud Café</h1>
-        <p>مكانك المفضل للاسترخاء والاستمتاع بألذ أنواع القهوة المختصة والحلويات الطازجة.</p>
-        <p>⏰ أوقات العمل: من الساعة 8 صباحاً وحتى 12 ليلاً</p>
-        <a href="menu.html" class="btn">تصفح المنيو الآن 📜</a>
+        <h1>قوة الأداء بلمسة أنيقة ✨</h1>
+        <p>دليلكِ الاحترافي لاختيار وتجميع حواسب الألعاب القوية ومحطات العمل الهندسية</p>
+        <a href="menu.html" class="btn">تصفح التجميعات الموصى بها 🚀</a>
+    </div>
+
+    <div class="intro-box">
+        <h3>💡 لماذا هذا الموقع؟</h3>
+        <p>سواء كنتِ مهندسة برمجيات تبحثين عن محطة عمل خارقة تتحمل البيئات الافتراضية والـ Docker، أو لاعبة تبحث عن أعلى معدل إطارات (FPS) مع تصميم Setup هادئ وأنيق؛ نحن هنا لنجمع لكِ بين قوة العتاد التقني وجمال المظهر.</p>
     </div>
 
     <footer>
-        <p>جميع الحقوق محفوظة © 2026 - </p>
+        <p>جميع الحقوق محفوظة © 2026</p>
     </footer>
 
 </body>
